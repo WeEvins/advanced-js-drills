@@ -24,9 +24,9 @@ function printFruits() {
 };
 
 printFruits();
+let leastFav = fruits[0];
 console.log(leastFav);
 
-let leastFav = fruits[0];
 
 alertName();
 function alertName(){
