@@ -11,17 +11,29 @@ function setName() {
 // here is the second part of the lab
 
 let fruits = ['banana', 'apple', 'orange']
-let favFruit;
 
-function printFruits(){
-    favFruit = fruits[0];
+
+function printFruits() {
+    let favFruit = fruits[2];
     console.log(fruits[1]);
-}
 
-function printFaveFruit(){
-    console.log(favFruit);
-    
-}
+    function printFavFruit() {
+        console.log(favFruit);
+        printFavFruit();
+    }
+};
 
 printFruits();
-printFaveFruit();
+console.log(leastFav);
+
+let leastFav = fruits[0];
+
+alertName();
+function alertName(){
+    console.log(`Hello ${name}`);
+}
+
+displayAlert();
+function displayAlert(){
+    alert (`Danger Will Robinson!`)
+}
